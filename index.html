@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./index.js" defer></script>
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+</head>
+<body>
+  <header class="header block" style="--padding-inline: 3rem;">
+    <nav class="nav flex">
+      <img src="./images/logo.svg" alt="Brand Logo">
+      <ul class="list list-inline">
+        <li class="list__item">
+          <a href="#" class="link link-nav link-dblue">Feature</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link link-nav link-dblue">Team</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link link-nav link-dblue">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="section block grid grid-1x2 gap" style="--col-gap: 0; --row-gap: 2rem; --padding-inline: 6rem">
+      <div class="section-logo">
+        <img src="./images/illustration-1.svg" alt="illustration-1">
+      </div>
+      <div class="section-body grid gap">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.</p>
+      </div>
+      <div class="section-action">
+        <form class="form flex gap" id="firstForm" method="post" novalidate style="--row-gap: 1rem;">
+          <label class="input-container flex" for="email">
+            <input class="input" id="email1" name="email" type="email" placeholder="Enter your email" required>
+            <span class="input-message">Enter your email</span>
+          </label>
+          <button type="submit" class="btn btn-blue btn-block">Get Started</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section section-bg block grid grid-1x2 gap text-left" style="--col-gap: 0; --row-gap: 2rem; --padding-inline: 6rem">
+      <div class="section-logo">
+        <img src="./images/illustration-1.svg" alt="illustration-1">
+      </div>
+      <div class="section-body grid gap">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>Never let location be an issue when accessing your files. Fylo has you 
+          covered for all of your file storage needs.</p>
+        <p>Securely share files and folders with friends, family and colleagues for 
+          live collaboration. No email attachments required!</p>
+      </div>
+      <div class="section-action">
+        <a href="" class="link link-underline link-arrow">
+          See how Fylo works
+        </a>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial__text">Fylo has improved our team productivity by an order of magnitude. Since 
+          making the switch our team has become a well-oiled collaboration machine.
+          </p>
+        <div class="testimonial-profile flex">
+          <img src="./images/avatar-testimonial.jpg" alt="Avatar" class="testimonial__avatar">
+          <div class="testimonial-title">
+            <p class="testimonial-name">Kyle Burton</p>
+            <span class="testimonial-job">Founder & CEO, Huddle</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section block block-light-blue grid grid-1x2 gap" style="--col-gap: 5rem; --row-gap: 2rem; --padding-inline: 6rem">
+      <div class="section-body grid gap" style="--row-gap: 2rem;">
+        <h1 class="text-white">Get early access today</h1>
+        <p class="text-white">It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <div class="section-action">
+        <form class="form grid gap" id="secForm" method="post" novalidate style="--row-gap: 1.5rem;">
+          <label class="input-container flex" for="email">
+            <input class="input" id="email2" name="email" type="email" placeholder="Enter your email" required>
+            <span class="input-message">Enter your email</span>
+          </label>
+          <button class="btn btn-blue btn-block">Get Started For Free</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer block bg-dark-blue">
+    <div class="footer-image">
+      <img src="./images/logo.svg" alt="Brand logo">
+    </div>
+    <div class="footer-lists grid">
+      <ul class="list list-footer">
+        <li class="list__item list__icon flex">
+          <svg class="icon">
+            <use xlink:href="./sprites/sprite.svg#icon-phone"></use>
+          </svg>
+          <a href="#" class="link link-footer">Phone</a>
+        </li>
+        <li class="list__item list__icon flex">
+          <svg class="icon">
+            <use xlink:href="./sprites/sprite.svg#icon-email"></use>
+          </svg>
+          <a href="#" class="link link-footer">Mail</a>
+        </li>
+      </ul>
+      <ul class="list list-footer">
+        <li class="list__item">
+          <a href="" class="link link-footer">About Us</a>
+        </li>
+        <li class="list__item">
+          <a href="" class="link link-footer">Jobs</a>
+        </li>
+        <li class="list__item">
+          <a href="" class="link link-footer">Press</a>
+        </li>
+        <li class="list__item">
+          <a href="" class="link link-footer">Blog</a>
+        </li>
+      </ul>
+      <ul class="list list-footer">
+        <li class="list__item">
+          <a href="" class="link link-footer">Contact Us</a>
+        </li>
+        <li class="list__item">
+          <a href="" class="link link-footer">Terms</a>
+        </li>
+        <li class="list__item">
+          <a href="" class="link link-footer">Privacy</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-attribution">
+      <a href="https://www.instagram.com/christopheriilajom" class="link" target="_blank">Coded by Christopher II</a>
+    </div>
+  </footer>
+</body>
+</html>
